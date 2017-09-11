@@ -8,5 +8,12 @@ public interface MainContract {
 
     interface Presenter {
 
+        void start();
+
+        void stop();
+
+        void onFindTotalSpentByCustomerRequested(String firstName, String lastName);
+
+        void onFindAmountOfProductSoldRequested(String lineItemTitle);
     }
 }

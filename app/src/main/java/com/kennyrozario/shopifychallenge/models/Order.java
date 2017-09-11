@@ -3,7 +3,7 @@ package com.kennyrozario.shopifychallenge.models;
 public class Order {
 
     // The unique numeric identifier for the order.
-    public int id;
+    public long id;
 
     // The customer's email address.
     public String email;
