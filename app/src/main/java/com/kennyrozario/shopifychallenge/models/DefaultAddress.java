@@ -3,13 +3,13 @@ package com.kennyrozario.shopifychallenge.models;
 // No documentation provided
 public class DefaultAddress {
 
-    public int id;
+    public long id;
 
-    public int customerId;
+    public long customer_id;
 
-    public String firstName;
+    public String first_name;
 
-    public String lastName;
+    public String last_name;
 
     public String company;
 
@@ -29,11 +29,11 @@ public class DefaultAddress {
 
     public String name;
 
-    public String provinceCode;
+    public String province_code;
 
-    public String countryCode;
+    public String country_code;
 
-    public String countryName;
+    public String country_name;
 
-    public boolean defaultAddress;
+    public boolean default_address;
 }

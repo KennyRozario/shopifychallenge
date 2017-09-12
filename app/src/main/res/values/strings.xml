@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ShopifyChallenge</string>
+    <string name="your_shopify_store">Your Shopify Store</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="napoleon_spent_money">Napoleon Batz has spent $%1$s at your store!</string>
+    <string name="bronze_bags_sold">You have sold %1$s Awesome Bronze Bag(s)!</string>
+    <string name="customer_not_found_message">Couldn\'t find customer %1$s.</string>
+    <string name="product_not_found_message">Couldn\'t find product %1$s.</string>
+    <string name="error_retriving_information">Something went wrong retrieving the information; please check your network connection.</string>
 </resources>

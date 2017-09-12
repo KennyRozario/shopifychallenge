@@ -9,43 +9,43 @@ public class Customer {
     public String email;
 
     // Indicates whether or not the customer would like to receive email updates from the shop.
-    public boolean acceptsMarketing;
+    public boolean accepts_marketing;
 
     // The date and time when the customer record was created.
-    public String createdAt;
+    public String created_at;
 
     // The date and time when the customer record was last updated.
-    public String updatedAt;
+    public String updated_at;
 
     // The customer's first name.
-    public String firstName;
+    public String first_name;
 
     // The customer's last name.
-    public String lastName;
+    public String last_name;
 
     // The number of orders placed by this customer to a shop.
-    public String ordersCount;
+    public int orders_count;
 
     // No documentation provided.
     public String state;
 
     // No documentation provided.
-    public String totalSpent;
+    public String total_spent;
 
     // No documentation provided.
-    public int lastOrderId;
+    public long last_order_id;
 
     // Extra information about the customer.
     public String note;
 
     // No documentation provided.
-    public boolean verifiedEmail;
+    public boolean verified_email;
 
     // No documentation provided.
-    public String multipassIdentifier;
+    public String multipass_identifier;
 
     // No documentation provided.
-    public boolean taxExempt;
+    public boolean tax_exempt;
 
     // The customer's phone number.
     public String phone;
@@ -54,7 +54,7 @@ public class Customer {
     public String tags;
 
     // No documentation provided.
-    public String lastOrderName;
+    public String last_order_name;
 
-    public DefaultAddress defaultAddress;
+    public DefaultAddress default_address;
 }

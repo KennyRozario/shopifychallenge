@@ -6,10 +6,10 @@ public class RefundLineItem {
     public int id;
 
     // The single line item being returned.
-    public LineItem lineItem;
+    public LineItem line_item;
 
     // The id of the related line item.
-    public int lineItemId;
+    public int line_item_id;
 
     // The quantity of the associated line item that was returned.
     public int quantity;

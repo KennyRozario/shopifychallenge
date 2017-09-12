@@ -4,6 +4,17 @@ public interface MainContract {
 
     interface View {
 
+        void showYourShopifyStoreTitle();
+
+        void showTotalSpentByCustomerMessage(String totalSpent);
+
+        void showCustomerNotFoundMessage(String firstName, String lastName);
+
+        void showTotalAmountOfProductSoldMessage(String totalAmountOfProductSold);
+
+        void showProductNotFoundMessage(String listItemTitle);
+
+        void showErrorRetrievingInformationMessage();
     }
 
     interface Presenter {
@@ -11,9 +22,5 @@ public interface MainContract {
         void start();
 
         void stop();
-
-        void onFindTotalSpentByCustomerRequested(String firstName, String lastName);
-
-        void onFindAmountOfProductSoldRequested(String lineItemTitle);
     }
 }

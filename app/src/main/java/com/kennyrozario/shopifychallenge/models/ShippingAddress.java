@@ -3,7 +3,7 @@ package com.kennyrozario.shopifychallenge.models;
 public class ShippingAddress {
 
     // The first name of the person associated with the payment method.
-    public String firstName;
+    public String first_name;
 
     // The street address of the shipping address.
     public String address1;
@@ -24,7 +24,7 @@ public class ShippingAddress {
     public String country;
 
     // The last name of the person associated with the payment method.
-    public String lastName;
+    public String last_name;
 
     // An optional additional field for the street address of the shipping address.
     public String address2;
@@ -33,17 +33,17 @@ public class ShippingAddress {
     public String company;
 
     // The latitude of the shipping address.
-    public double latitude;
+    public Float latitude;
 
     // The longitude of the shipping address.
-    public double longitude;
+    public Float longitude;
 
     // The full name of the person associated with the payment method.
     public String name;
 
     // The two-letter code for the country of the shipping address.
-    public String countryCode;
+    public String country_code;
 
     // The two-letter abbreviation of the state or province of the shipping address.
-    public String provinceCode;
+    public String province_code;
 }
