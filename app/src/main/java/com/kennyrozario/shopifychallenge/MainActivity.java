@@ -3,6 +3,9 @@ package com.kennyrozario.shopifychallenge;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {
@@ -21,9 +24,15 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         mTotalSpent = (TextView) findViewById(R.id.total_spent);
         mProductSold = (TextView) findViewById(R.id.product_sold);
         mCongratulations = (TextView) findViewById(R.id.congratulations);
+        ImageView shopifyLogo = (ImageView) findViewById(R.id.shopify_logo);
 
         mPresenter = new MainPresenter(this);
         mPresenter.start();
+
+        shopifyLogo.setOnClickListener(view -> {
+            Animation animation = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
+            shopifyLogo.startAnimation(animation);
+        });
     }
 
     @Override
