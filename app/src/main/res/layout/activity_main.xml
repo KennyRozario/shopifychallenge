@@ -28,7 +28,8 @@
             android:text="@string/congratulations"
             android:textColor="@android:color/secondary_text_light"
             android:textSize="@dimen/text_size_xlarge"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            tools:visibility="visible"/>
 
         <TextView
             android:id="@+id/total_spent"
