@@ -16,7 +16,7 @@ public class OkHttpHelper {
         mUrlString = urlString;
     }
 
-    public Observable<Call> getRequestObservable() throws IOException {
+    public Observable<Call> getCallObservable() throws IOException {
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()

@@ -1,5 +1,8 @@
 package com.kennyrozario.shopifychallenge;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -99,6 +102,14 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @Override
     public void showYourShopifyStoreTitle() {
         setTitle(R.string.your_shopify_store);
+    }
+
+    @Override
+    public boolean hasNetworkConnection() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        return networkInfo != null && networkInfo.isConnected();
     }
 
     @Override

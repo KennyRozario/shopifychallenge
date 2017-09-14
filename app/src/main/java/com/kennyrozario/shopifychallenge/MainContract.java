@@ -15,6 +15,8 @@ public interface MainContract {
         void showProductNotFoundMessage(String listItemTitle);
 
         void showErrorRetrievingInformationMessage();
+
+        boolean hasNetworkConnection();
     }
 
     interface Presenter {

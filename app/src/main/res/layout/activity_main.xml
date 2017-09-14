@@ -40,7 +40,7 @@
             android:gravity="center"
             android:textColor="@color/text_color_light"
             android:textSize="@dimen/text_size_large"
-            tools:text="Napoleon Batz has spent $185.44 at your store!"/>
+            tools:text="Napoleon Batz has spent $123.45 at your store!"/>
 
         <TextView
             android:id="@+id/product_sold"
@@ -49,7 +49,7 @@
             android:gravity="center"
             android:textColor="@color/text_color_light"
             android:textSize="@dimen/text_size_large"
-            tools:text="You have sold 8 Awesome Bronze Bag(s)!"/>
+            tools:text="You have sold 42 Awesome Bronze Bag(s)!"/>
 
     </LinearLayout>
 

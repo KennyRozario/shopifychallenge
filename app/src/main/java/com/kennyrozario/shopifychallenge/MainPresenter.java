@@ -42,6 +42,11 @@ public class MainPresenter implements MainContract.Presenter {
         Moshi moshi = new Moshi.Builder().build();
         JsonAdapter<JsonResponse> jsonAdapter = moshi.adapter(JsonResponse.class);
 
+        if (!mView.hasNetworkConnection()) {
+            mView.showErrorRetrievingInformationMessage();
+            return;
+        }
+
         mSubscription.add(getResponseObservable()
                 .map(response -> {
                     if (response != null && response.body() != null) {
@@ -131,7 +136,7 @@ public class MainPresenter implements MainContract.Presenter {
         OkHttpHelper helper = new OkHttpHelper(URL);
 
         try {
-            return helper.getRequestObservable()
+            return helper.getCallObservable()
                     .observeOn(RxUtils.getBackgroundScheduler())
                     .map(Call::execute);
         } catch (IOException e) {
